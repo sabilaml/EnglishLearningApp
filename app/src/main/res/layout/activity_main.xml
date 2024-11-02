@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/english_learning_app"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#333333" />
+
+    <!-- Interactive Cat Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/animal_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/cat"
+            android:contentDescription="@string/interactive_cat_image"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interactive_cat"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#555555"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <!-- Play Story Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Play_story"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:textColor="#333333" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="8dp"
+        android:background="#EEEEEE"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/storyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/the_adventures_of_whiskers"
+            android:textColor="#555555"
+            android:layout_gravity="bottom|center_horizontal"
+            android:padding="4dp" />
+
+        <Button
+            android:id="@+id/story_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tap_to_read"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3E50B4" />
+    </FrameLayout>
+
+    <!-- Speak Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Speak"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:textColor="#333333" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="8dp"
+        android:background="#EEEEEE"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/speechTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/practice_pronunciation"
+            android:textColor="#555555"
+            android:layout_gravity="bottom|center_horizontal"
+            android:padding="4dp" />
+
+        <Button
+            android:id="@+id/speech_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speak_to_practice"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3E50B4" />
+
+        <TextView
+            android:id="@+id/speechResultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="top|center_horizontal"
+            android:padding="8dp"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/developed_by_sabila_marista_losya_2024"
+        android:textColor="#546E7A"
+        android:textSize="12sp" />
+
+</LinearLayout>
